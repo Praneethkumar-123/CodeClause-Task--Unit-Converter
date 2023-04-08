@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Converter</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <h1 id="heading">Unit Converter</h1>
+    <div id="container">
+      <div class="input-div">
+        <label>Feet</label><br />
+        <input type="number" value="1" id="feet" class="inpt" />
+      </div>
+      <div class="input-div">
+        <h1>=</h1>
+      </div>
+      <div class="input-div">
+        <label>Inches</label><br />
+        <input type="number" value="12" id="inch" class="inpt" />
+      </div>
+    </div>
+    <br />
+    <br />
+    <br />
+    <h1 id="heading1">Temperature Converter</h1>
+    <div id="container1">
+      <div class="input-div1">
+        <label>Celsius</label><br />
+        <input type="number" id="celsius" class="inpt1" oninput="celtofar()" />
+      </div>
+      <div class="input-div1">
+        <h1>=</h1>
+      </div>
+      <div class="input-div1">
+        <label>Fahrenheit</label><br />
+        <input
+          type="number"
+          id="fahrenheit"
+          class="inpt1"
+          oninput="fatocel()"
+        />
+      </div>
+    </div>
+    <br />
+
+    <div class="p">
+      <br />
+      <br />
+      <h1 id="heading3">Length Converter</h1>
+      <div class="converter-body">
+        &NonBreakingSpace;&nbsp;&nbsp;
+        <input type="text" placeholder="Input" id="input" />
+        <span>=</span>
+        <input type="text" placeholder="Result" id="result" />
+        <br />
+        <br />
+        &nbsp;&nbsp;&nbsp;&nbsp;<select id="inputType">
+          <option value="meter">Meter</option>
+          <option value="Kilometer">Kilometer</option>
+          <option value="Centimeter">Centimeter</option>
+        </select>
+        <select id="resultType">
+          <option value="meter">Meter</option>
+          <option value="Kilometer">Kilometer</option>
+          <option value="Centimeter">Centimeter</option>
+        </select>
+      </div>
+    </div>
+    <script src="script.js"></script>
+  </body>
+</html>
